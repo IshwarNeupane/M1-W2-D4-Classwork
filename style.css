@@ -13,12 +13,15 @@ body {
 }
 
 .logo,
-ul li {
+ul li, ul li a {
     color: #fff;
 }
-
+ul li a {
+    text-decoration: none;
+}
 nav ul li:hover,
-nav ul svg:hover {
+nav ul svg:hover,
+nav ul li a:hover {
     cursor: pointer;
     color: #eb4b60d0;
     fill: #eb4b60;
@@ -326,7 +329,7 @@ div:first-child .social-icon {
       margin-top: 2em;
   }
   .index-about-section .sb1{
-      background: #5d00ff;
+      background: #55038484;
       padding: 1em;
   }
   .index-about-section .sb2{
@@ -337,11 +340,11 @@ div:first-child .social-icon {
     background: #ff00a6ea;
     padding: 1em;
 }
-.sb1 img, .sb2 img, .sb3 img{
+.sb1 img, .sb2 img, .sb3 img, .pp1 img{
     height: 7em;
     width: auto;
 }
-.sb1 h3, .sb2 h3, .sb3 h3{
+.sb1 h3, .sb2 h3, .sb3 h3, .pp1 h3{
     font-weight: 600;
     margin: .5em 0;
 }
@@ -361,4 +364,115 @@ div:first-child .social-icon {
 .foot-p span a:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+.pricing-box{
+    height: max-content;
+    width: 23em;
+    background: white;
+    border-radius: 1.5em;
+    display: flex;
+    text-align: center;
+}
+.index-about-section .pp1{
+    background: #55038484;
+    padding: 1em;
+}
+.pricing-features{
+    margin-top: .5em;
+    font-weight: 700;
+}
+.pricing-dollar{
+    margin-top: .5em;
+}
+.pricing-dollar span{
+    font-size: 30pt;
+    font-weight: 500;
+}
+.pricing-middle-box div{
+    padding: 3em 0;
+}
+.pricing-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pricing-btn{
+    font-size: 12pt;
+    font-weight: 600;
+    padding: .5em 1.5em;
+    background: #eb4b60;
+    color: #fff;
+    border-radius: 2em;
+    border: 2px solid transparent;
+    margin-top: 1em;
+}
+.pricing-btn:hover{
+    background: #eb4b60d0;
+    cursor: pointer;
+    color: rgb(243, 240, 240);
+}
+.experience-status{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'poppins';
+    color: #fff;
+}
+.experience-status .pricing-box{
+    width: 50%;
+    margin: 1em;
+}
+.experience-status .pricing-box .pricing-box-content span{
+    display: inline-block;
+    height: 100%;
+    width: .1em;
+    background: #eb4b60;
+    position: relative;
+}
+.experience-status .pricing-box .pricing-box-content{
+    display: flex;
+}
+.experience-status .pricing-box .pricing-box-content span .fas{
+    color: #eb4b60;
+    display: block;
+    margin-left: -.5em;
+}
+.exp-1{
+margin-bottom: 8.5em;
+margin-top: .2em;
+}
+.exp-2{
+    margin-bottom: 8.5em;
+}
+.experience-details{
+    margin-left: 1em;
+    display: block !important;
+}
+.experience-details-1{
+    display: block !important;
+    text-align: left;
+}
+.experience-details-1 h1{
+    font-size: 14pt;
+    font-weight: 600;
+    margin: .5em 0;
+}
+.experience-details-1 p{
+    font-weight: 300;
+    font-size: 10pt;
+}
+.margin-alt{
+    margin-bottom: 2em;
+}
+.pricing-box-height{
+    height: max-content !important;
+}
+.pricing-foot{
+    background: #55038484;
+    padding: 1em;
+    margin: .5em 5em;
+    border-radius: .8em;
+    font-family: 'poppins';
+    font-size: 10pt;
+    font-weight: 300;
+    color: #fff;
 }
